@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="535.0" prefWidth="588.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewCustomerFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="450.0" layoutY="86.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="590.0">
+         <fill>
+            <RadialGradient centerX="0.4955752043597466" centerY="0.5568181818181818" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6527160406112671" green="0.6407407522201538" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.40108656402849363">
+                     <color>
+                        <Color red="0.6527160406112671" green="0.6407407522201538" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7383700013160706" green="0.5734000205993652" blue="0.9399999976158142" opacity="0.6200000047683716" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Rectangle>
+      <Label alignment="CENTER" layoutY="-1.0" prefHeight="86.0" prefWidth="590.0" style="-fx-background-color: black;" text="View Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="49.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="235.0" layoutY="488.0" onAction="#onClickViewTable" prefHeight="31.0" prefWidth="127.0" style="-fx-background-color: #ff9f1a; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: black;" text="Reload">
+         <font>
+            <Font name="Calisto MT Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Circle fill="WHITE" layoutX="540.0" layoutY="504.0" radius="23.0" stroke="#918b9c" strokeType="OUTSIDE" strokeWidth="3.0" />
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="525.0" layoutY="490.0" onMouseClicked="#onClickGoHomePage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/homebutton.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <TableView fx:id="tblCustomers" layoutY="99.0" prefHeight="359.0" prefWidth="590.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="86.39996182918549" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="150.40003204345703" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="127.19996643066406" text="Address" />
+            <TableColumn fx:id="colContact" prefWidth="124.800048828125" text="Contact No." />
+            <TableColumn fx:id="colDob" prefWidth="97.60000610351562" text="DOB" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

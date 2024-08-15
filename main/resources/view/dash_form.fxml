@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="426.0" prefWidth="732.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="451.0" layoutX="-2.0" layoutY="-2.0" stroke="BLACK" strokeType="OUTSIDE" width="370.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.33403509855270386" green="0.4040233790874481" blue="0.7157894968986511" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.09152086137281293">
+                     <color>
+                        <Color red="0.33403509855270386" green="0.4040233790874481" blue="0.7157894968986511" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.34651872763680525">
+                     <color>
+                        <Color red="0.145185187458992" green="0.6035555601119995" blue="0.800000011920929" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.597370580704461">
+                     <color>
+                        <Color red="0.3188304007053375" green="0.788280725479126" blue="0.9894737005233765" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.8954633489807305">
+                     <color>
+                        <Color red="0.2757115066051483" green="0.5473684072494507" blue="0.5383132100105286" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.2757115066051483" green="0.5473684072494507" blue="0.5383132100105286" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="321.0" fitWidth="295.0" layoutX="30.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/3_ePOS_image-4.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="451.0" layoutX="358.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="373.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.9166666784069755" startX="0.33712121206476836" startY="0.10606064940943859">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.0833333358168602" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.05027082033942822">
+                     <color>
+                        <Color green="0.0833333358168602" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5394445721038635">
+                     <color>
+                        <Color red="0.5261598229408264" green="0.538822591304779" blue="0.5894736647605896" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.8529790237337096">
+                     <color>
+                        <Color red="0.27473685145378113" green="0.8526315689086914" blue="0.7370526194572449" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.27450981736183167" green="0.8509804010391235" blue="0.7372549176216125" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="4.0" prefHeight="101.0" prefWidth="366.0" text="ThogaKade" textAlignment="CENTER">
+         <font>
+            <Font name="Book Antiqua Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="66.0" prefHeight="69.0" prefWidth="366.0" text="Customer Management" textAlignment="CENTER">
+         <font>
+            <Font name="Book Antiqua Bold" size="29.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.06818181637561684" endY="0.7916666734399218">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4146341463414634">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6853658536585365">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.846341463414634">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="414.0" layoutY="60.0" onAction="#onClickAddCustomer" prefHeight="41.0" prefWidth="266.0" style="-fx-background-color: #32ff7e; -fx-border-radius: 40; -fx-background-radius: 40; -fx-border-color: black;" text="Add Customer">
+         <font>
+            <Font name="Georgia Bold" size="23.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="414.0" layoutY="130.0" onAction="#onClickSearchCustomer" prefHeight="41.0" prefWidth="266.0" style="-fx-background-color: #18dcff; -fx-background-radius: 40; -fx-border-radius: 40; -fx-border-color: black;" text="Search Customer">
+         <font>
+            <Font name="Georgia Bold" size="23.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="414.0" layoutY="197.0" onAction="#onClickUpdateCustomer" prefHeight="41.0" prefWidth="266.0" style="-fx-background-color: #fff200; -fx-border-radius: 40; -fx-background-radius: 40; -fx-border-color: black;" text="Update Customer">
+         <font>
+            <Font name="Georgia Bold" size="23.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="414.0" layoutY="264.0" onAction="#onClickDeleteCustomer" prefHeight="41.0" prefWidth="266.0" style="-fx-background-color: #ff3838; -fx-background-radius: 40; -fx-border-radius: 40; -fx-border-color: black;" text="Delete Customer">
+         <font>
+            <Font name="Georgia Bold" size="23.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="414.0" layoutY="329.0" onAction="#onClickViewCustomer" prefHeight="41.0" prefWidth="266.0" style="-fx-background-color: #ff9f1a; -fx-background-radius: 40; -fx-border-radius: 40; -fx-border-color: black;" text="View Customer">
+         <font>
+            <Font name="Georgia Bold" size="23.0" />
+         </font>
+      </JFXButton>
+      <Circle fill="#1bc7b8" layoutX="668.0" layoutY="416.0" radius="22.0" stroke="#918b9c" strokeType="OUTSIDE" strokeWidth="3.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <ImageView fitHeight="35.0" fitWidth="31.0" layoutX="654.0" layoutY="397.0" onMouseClicked="#onClickLogout" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/4-49940_logout-icon-png-black-power-button-transparent-png.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
