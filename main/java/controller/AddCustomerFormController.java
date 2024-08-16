@@ -143,7 +143,7 @@ public class AddCustomerFormController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        ObservableList<String> titles = FXCollections.observableArrayList("Mr.", "Mrs.");
+        ObservableList<String> titles = FXCollections.observableArrayList("Master.","Miss.","Mr.", "Mrs.","Ven.","Rev.");
         cmbTittle.setItems(titles);
         lblGenId.setText(generateId());
     }
