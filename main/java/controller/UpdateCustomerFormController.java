@@ -107,7 +107,7 @@ public class UpdateCustomerFormController implements Initializable {
         }
 
         if (customerToUpdate != null) {
-            customerToUpdate.setName(txtName.getText());
+            customerToUpdate.setName(cmbTittle.getValue()+txtName.getText());
             customerToUpdate.setAddress(txtAddress.getText());
             customerToUpdate.setContact(txtContactNum.getText());
             customerToUpdate.setDob(dob.getValue());
